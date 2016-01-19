@@ -102,7 +102,7 @@ class Board(object):
         
         # Diagonal combinations
         self.winning_combinations.append(tuple(x for x in xrange(0, len(indices), self.grid_size + 1)))
-        self.winning_combinations.append(tuple(x for x in xrange(self.grid_size - 1, len(indices), self.grid_size - 1)))
+        self.winning_combinations.append(tuple(x for x in xrange(self.grid_size - 1, len(indices), self.grid_size + 1)))
     
     def check_for_winner(self):
         winner = 0
